@@ -45,7 +45,7 @@
             <li class="comments_list">
               <p>
                 <%= comment.content %>
-                <%= link_to comment.user.name, "/users/#{current_user}", class: :comment_user %>
+                <%= link_to comment.user.name, user_path(@prototype.user), class: :comment_user %>
               </p>
             </li>
           <% end %>
